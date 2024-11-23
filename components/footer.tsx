@@ -48,7 +48,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand Information */}
           <div className="space-y-4">
-            <h3 className="text-lg font-bold">YourBrand</h3>
+            <h3 className="text-lg font-bold">WorkWhales</h3>
             <p className="text-sm text-gray-600">
               Making the world a better place through innovative solutions.
             </p>
@@ -99,7 +99,7 @@ export function Footer() {
         {/* Footer Bottom */}
         <div className="mt-8 border-t border-gray-200 pt-8">
           <p className="text-sm text-gray-400 text-center">
-            © {new Date().getFullYear()} YourBrand. All rights reserved.
+            © {new Date().getFullYear()} MIT, workwhales.
           </p>
         </div>
       </div>

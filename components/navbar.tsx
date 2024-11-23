@@ -36,7 +36,7 @@ export function Navbar() {
               href="/"
               className="text-xl font-bold text-gray-900 hover:text-gray-700"
             >
-              YourBrand
+              WorkWhales
             </Link>
           </div>
 
