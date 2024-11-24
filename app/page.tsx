@@ -1,7 +1,8 @@
-import { Button } from "@/components/ui/button"; // Fixed import path
+import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, BarChart2, Zap, Shield } from "lucide-react";
 import React, { memo } from "react";
 import type { SVGProps } from "react";
+import Link from 'next/link';
 
 // Updated FeatureCardProps with correct Icon typing for LucideReact icons
 interface FeatureCardProps {
@@ -157,14 +158,16 @@ export default function Home() {
             operations, boost productivity, and drive growth for your business.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="default"
-              className="text-base"
-              data-plausible-event="hero-cta-click"
-              aria-label="Get Started with AI-Powered Solutions"
-            >
-              Get Started <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            <Link href="/waitlist" passHref>
+              <Button
+                size="default"
+                className="text-base"
+                data-plausible-event="hero-cta-click"
+                aria-label="Join Waitlist for AI-Powered Solutions"
+              >
+                Join Waitlist <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
             <Button
               size="default"
               variant="outline"
@@ -224,15 +227,17 @@ export default function Home() {
             Join thousands of businesses already using our platform to grow and
             succeed.
           </p>
-          <Button
-            size="default"
-            variant="secondary"
-            className="text-base"
-            data-plausible-event="footer-cta-click"
-            aria-label="Get Started Now"
-          >
-            Get Started Now <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          <Link href="/waitlist" passHref>
+            <Button
+              size="default"
+              variant="secondary"
+              className="text-base"
+              data-plausible-event="footer-cta-click"
+              aria-label="Join Waitlist Now"
+            >
+              Join Waitlist Now <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
         </div>
       </section>
     </>
