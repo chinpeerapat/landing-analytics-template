@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 
 // Extend the Window interface to include the plausible function
